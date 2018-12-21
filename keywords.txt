@@ -1,0 +1,29 @@
+  
+#######################################
+# Syntax Coloring Map For Grove Elink 2.7
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+KEYWORD1    Epd
+KEYWORD1	Paint
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+KEYWORD2    Init
+KEYWORD2    TransmitPartialBlack
+KEYWORD2	TransmitPartialRed
+KEYWORD2    Clear
+KEYWORD2    DrawStringAt
+KEYWORD2    SetWidth
+KEYWORD2    SetHeight
+KEYWORD2    DrawRectangle
+KEYWORD2    DrawLine
+KEYWORD2    DisplayFrame
+KEYWORD2    Sleep
+
+#######################################
+# Constants (LITERAL1)
+#######################################
