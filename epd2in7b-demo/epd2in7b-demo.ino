@@ -57,16 +57,23 @@
 #include "imagedata.h"
 #include <epdpaint.h>
 
+#ifdef ARDUINO_SAMD_VARIANT_COMPLIANCE
+  #define SERIAL SerialUSB
+#else
+  #define SERIAL Serial
+#endif
+
+
 #define COLORED     1
 #define UNCOLORED   0
 
 void setup() {
   // put your setup code here, to run once:
-  Serial.begin(9600);
+  SERIAL.begin(9600);
   Epd epd;
 
   if (epd.Init() != 0) {
-    Serial.print("e-Paper init failed");
+    SERIAL.print("e-Paper init failed");
     return;
   }
 
