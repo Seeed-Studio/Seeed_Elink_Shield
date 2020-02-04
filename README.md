@@ -1,4 +1,4 @@
-Grove Elink 2.7
+Grove Elink 2.7  [![Build Status](https://travis-ci.com/Seeed-Studio/Seeed_Elink_Shield.svg?branch=master)](https://travis-ci.com/Seeed-Studio/Seeed_Elink_Shield)
 ==============
 
 Visit Seeed official product wiki to get more detail.
