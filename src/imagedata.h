@@ -1,10 +1,8 @@
 /**
-    @filename   :   epdif.h
-    @brief      :   Header file of epdif.cpp providing EPD interface functions
-                    Users have to implement all the functions in epdif.cpp
-    @author     :   Yehui from Waveshare
+    @filename   :   imagedata.h
+    @brief      :   head file for imagedata.cpp
 
-    Copyright (C) Waveshare     August 10 2017
+    Copyright (C) Waveshare     July 4 2017
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documnetation files (the "Software"), to deal
@@ -25,27 +23,10 @@
     THE SOFTWARE.
 */
 
-#ifndef EPDIF_H
-#define EPDIF_H
+extern const unsigned char IMAGE_BLACK[];
+extern const unsigned char IMAGE_RED[];
 
-#include <Arduino.h>
+/* FILE END */
 
-// Pin definition
-#define RST_PIN         8
-#define DC_PIN          9
-#define CS_PIN          10
-#define BUSY_PIN        7
 
-class EpdIf {
-  public:
-    EpdIf(void);
-    ~EpdIf(void);
 
-    static int  IfInit(void);
-    static void DigitalWrite(int pin, int value);
-    static int  DigitalRead(int pin);
-    static void DelayMs(unsigned int delaytime);
-    static void SpiTransfer(unsigned char data);
-};
-
-#endif

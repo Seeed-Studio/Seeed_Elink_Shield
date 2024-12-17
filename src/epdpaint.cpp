@@ -24,7 +24,11 @@
     THE SOFTWARE.
 */
 
+#ifdef ARDUINO_ARCH_ESP32
+#include <pgmspace.h>
+#else
 #include <avr/pgmspace.h>
+#endif
 #include "epdpaint.h"
 
 Paint::Paint(unsigned char* image, int width, int height) {
